@@ -99,21 +99,9 @@ PhantomForcesWindow = Library:NewWindow("HeartLand " .. ThisActuallyCool())
 
 WeLoveCat = PhantomForcesWindow:NewSection("Main")
 
-WeLoveCat:CreateToggle("Inf Firepp", function(value) 
+WeLoveCat:CreateToggle("Inf Firepp", function(value)
 loopActive = value
-        while loopActive and task.wait(0,5) do
- for _, pro in ipairs(workspace:GetDescendants()) do
-         if pro:IsA("ProximityPrompt") then
-            fireproximityprompt(pro)
-end
+while loopActive and task.wait(0,5) do
+Touchinterest()
 end
 end) ;
-
-WeLoveCat:CreateToggle("AutoCollect Heart", function(value) 
-loopActive = value
-        while loopActive and task.wait(0,5) do
- for _, txn in ipairs(workspace:GetDescendants()) do
-    if txn.Name == "TouchPart" then game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = txn.CFrame
-end
-end
-end)

@@ -21,8 +21,8 @@ function ClickDet()
     end) 
 end
 
-function proxi()
-   spawn(function()
+function proxi(0.2)
+   spawn(function(0.2)
      for _, pro in ipairs(workspace:GetDescendants()) do
          if pro:IsA("ProximityPrompt") then
             fireproximityprompt(pro)

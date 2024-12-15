@@ -102,6 +102,6 @@ WeLoveCat = PhantomForcesWindow:NewSection("Main")
 WeLoveCat:CreateToggle("Inf Firepp", function(value)
 loopActive = value
 while loopActive and task.wait(0,5) do
-Touchinterest()
+proxi()
 end
 end) ;

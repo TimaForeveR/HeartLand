@@ -38,13 +38,9 @@ function ThisActuallyCool()
     end
 end
 
-PhantomForcesWindow = Library:NewWindow("HeartLand " .. ThisActuallyCool())
+PhantomForcesWindow = Library:NewWindow("Скрипт " .. ThisActuallyCool())
 
 WeLoveCat = PhantomForcesWindow:NewSection("Main")
 
-WeLoveCat:CreateToggle("Inf Firepp", function(value)
-loopActive = value
-while loopActive and task.wait(0,5) do
-proxi(0.2)
-end
-end) ;
+WeLoveCat:CreateButton("ТП", function() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-522, 35, -15)
+end)
